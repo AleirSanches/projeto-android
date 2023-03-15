@@ -1,0 +1,206 @@
+@charset " UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*importa a fonte do google fontes (Bebas Neue)*/
+
+@font-face {
+    font-family:"idroid" ;  /* @font-face configura a fonte baixada, localizada no arquivo do projeto*/
+    src: url(../fontes/idroid.otf); /*blocaliza a conte dentro da pasta FONTES*/
+}
+
+:root{
+    --cor1:#41D976; /* cria Variavel de cor */
+    --cor2:#2A8C4C; /* cria Variavel de cor */
+    --cor3:#1B5931; /* cria Variavel de cor */
+    --font_principal:Arial, Helvetica, sans-serif;
+    --font_destaque: "idroid"; /* fonte baixada */
+    --font_destaque1: 'Bebas Neue', cursive; /* variavel fonte google*/
+
+
+}
+
+*{
+    margin: 0px; /* o sinal de (*) significa todas as Tags, confifura iniciamente ZERO MARGIN E ZERO PADDING para todos os arquivos*/
+    padding: 0px;
+}
+
+main img{ /*imagens dentro do <main>*/
+    width: 100%; /* configura que a Tag <img> imagem aparece 100% independente o tamanho da tela*/ 
+
+}
+
+main img.pequena{ /*configura a <img> com nome da class (pequena)*/
+    max-width: 350px; /* mostrar no maximo com 50%*/
+    display: block; /* transforma a imagem em bloco para poder centralizar*/
+    margin: auto; /* centraliza a imagem*/
+    
+}
+header{
+    background-image: linear-gradient(to bottom,#41D976,#164727);
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: -moz-linear-gradient(to botton ,--cor1 --cor3);
+}   
+ header > h1{
+    font-family:var(--font_destaque1); /* cor de H1 dentro de header*/
+    font-size:2.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);/*sombra para o titulo*/
+    
+    
+    
+ }   
+header > p{
+    text-align: center; /* confugura Paragrafo cenyralizado dentro de header*/
+    font-weight: 600;
+
+
+}    
+   
+
+nav{
+    background-color: #164727;
+    padding: 10px;/*padding do tamanho do padding de <a> para enquadar certo*/
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.315);
+    
+
+
+
+    
+}
+nav > a{
+    color: #41D976;
+    text-decoration: none; /* tira o underline de <a> dentro de <nav>*/
+    /*padding-left: 8px;
+    padding-right: 8px;*/
+    padding: 10px;
+    
+    border-radius: 2px;
+    font-weight: bold;
+    transition-duration: 0.5s;/*da dinamica no acesso aos links*/
+    
+}
+a:hover{
+    color:black;
+    /*text-decoration: underline; /* quando o mouse passar pelo Menu, fica sublinhado*/
+    background-color: var(--cor2);
+}    
+
+body{
+    font-family: var(--font_principal);
+    background-color: #53eb88c7;
+}
+
+main{
+    
+    padding: 10px;
+    border-bottom-left-radius:10px ; /*arrendonda a mais inferior esqurda*/
+    border-bottom-right-radius:10px ;/* arredonda a parte inferior direita*/
+    background-color: white;
+    max-width: 800px;
+    min-width:280px;
+    margin: auto;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    margin-bottom: 20px;/* cria uma borda na parte de baixa para afastar o main de footer*/
+
+    
+}
+
+main h1{
+    font-family:var(--font_destaque);
+    font-size:1.8em;
+    font-weight: normal;
+
+
+
+}
+
+main  h2{
+    font-family:var(--font_destaque);
+    font-size: 1.4em;
+    background-image: linear-gradient(to left,#2A8C4C, transparent);
+
+    
+
+}
+main p{
+    margin: 15px 0px;
+    text-indent: 15px;
+    line-height: 1.3em;/*espaçamento entre as linhas*/
+}
+
+main strong{
+    font-size:1.1em ;
+    color: var(--cor3);
+    font-weight: 600;
+    
+}
+main a{
+    font-size:1.1em ;
+    color: var(--cor3);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #41D976;
+}
+main a:hover{
+    text-decoration: underline;
+
+}    
+    
+
+
+div.video{
+    background-color: #41D976;
+    margin: 0px -10px 30px -10px;
+    padding :20px;
+    padding-bottom: 59%;
+    position: relative;
+   
+
+
+    
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    width:90%;
+    height: 90%;
+
+
+}
+a.externo::after{
+    content: '\00A0\1F517'
+}
+aside{
+    border-radius: 10px;
+    background-color:#41D976 ;
+    padding:10px
+    
+    
+}
+aside h3{
+    color:white;
+    background-color: #1B5931;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px  10px 0px 0px;
+}
+aside ul{
+    list-style-position:inside;
+    columns: 2;
+    list-style-type: '\1F5F8\00A0\00A0';
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
